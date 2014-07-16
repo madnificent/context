@@ -11,7 +11,13 @@ Gulp (if you want to run "gulp" from CLI, not from npm)
 
 ### Installing
 
-Clone & do "npm install"  
+clone, npm install, edit the config
+
+    git clone https://github.com/AKSW/context.git
+    cd context
+    npm install
+    cp config.example.js config.js
+    # edit config.js so it fits your use
 
 ### Running
 
@@ -24,9 +30,10 @@ Assuming you have [vagrant](http://www.vagrantup.com/) installed, you can run co
 
 1. Execute `vagrant up` to init & start vagrant environment
 2. Once ready, connect to vagrant box using `vagrant ssh`
-3. Change to workdir with `cd /vagrant`
-4. (optional) Install conTEXT with `npm install`
-5. Run the app with `gulp`
+3. Make a `/vagrant/config.js` based on `/vagrant/config.example.js`
+4. Change to workdir with `cd /vagrant`
+5. (optional) Install conTEXT with `npm install`
+6. Run the app with `gulp`
 
 ### Testing
 
